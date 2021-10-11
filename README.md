@@ -42,3 +42,57 @@ Escopo:
 * Estado -str
 * LatLog - PostGIS
 * Data extracao
+
+CREATE TABLE apartamentos (
+	URL_anuncio varchar,
+  preco float,
+  preco_IPTU float,
+  preco_condominio float,
+  m2 int,
+  quarto int,
+  banheiro int,
+  suite int,
+  corretora bool,
+  endereco varchar,
+  bairro varchar,
+  cidade varchar,
+  uf varchar(2),
+  latlon point,
+  data_extracao timestamp
+)
+
+
+INSERT INTO apartamentos (
+	URL_anuncio ,
+  preco ,
+  preco_IPTU ,
+  preco_condominio ,
+  m2 ,
+  quarto ,
+  banheiro ,
+  suite ,
+  corretora ,
+  endereco ,
+  bairro,
+  cidade,
+  uf ,
+  latlon ,
+  data_extracao
+)
+VALUES (
+	'asdfasf',
+  23.2,
+  1,
+  2,
+  45,
+  2,
+  1,
+  1,
+  true,
+  'rua ze',
+  'jardins',
+  'goiania',
+  'GO',
+  point(-17.234123, -49.23412343),
+  now()
+)

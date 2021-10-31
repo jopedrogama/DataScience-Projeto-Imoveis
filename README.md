@@ -58,6 +58,8 @@ CREATE TABLE apartamentos (
   cidade varchar,
   uf varchar(2),
   latlon point,
+  lat float,
+  lon float,
   data_extracao timestamp
 )
 
@@ -77,6 +79,8 @@ INSERT INTO apartamentos (
   cidade,
   uf ,
   latlon ,
+  lat,
+  lon,
   data_extracao
 )
 VALUES (
